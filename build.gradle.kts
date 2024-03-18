@@ -11,9 +11,10 @@ val rxKotlinName: String by project
 
 plugins {
     kotlin("jvm") version "1.9.20"
+    id("maven-publish")
 }
 
-group = "dev.specter"
+group = "com.github.ks288"
 version = "1.0.0-SNAPSHOT"
 
 repositories {
@@ -33,4 +34,11 @@ dependencies {
 
 kotlin {
     jvmToolchain(17)
+}
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["kotlin"])
+        }
+    }
 }
