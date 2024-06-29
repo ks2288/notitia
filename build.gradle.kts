@@ -23,8 +23,8 @@ repositories {
 
 dependencies {
 
-    implementation("$realmBaseName:$realmVersion")
-    implementation("$realmSyncName:$realmVersion")
+    api("$realmBaseName:$realmVersion")
+    api("$realmSyncName:$realmVersion")
     implementation("$coroutinesCoreName:$kotlinxVersion")
     implementation("$coroutinesRx3Name:$kotlinxVersion")
     implementation("$rxKotlinName:$rxKotlinVersion")
