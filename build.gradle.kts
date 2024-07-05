@@ -11,11 +11,12 @@ val rxKotlinName: String by project
 
 plugins {
     kotlin("jvm") version "1.9.20"
+    id("io.realm.kotlin") version "1.14.0"
     id("maven-publish")
 }
 
 group = "com.github.ks288"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
